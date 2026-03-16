@@ -88,8 +88,8 @@
         /* Tambahan agar terlihat profesional di HP */
         .footer {
             margin-top: 15px;
-            font-size: 11px;
-            color: #999;
+            font-size: 13px;
+            color: black;
             text-transform: uppercase;
         }
     </style>
@@ -97,18 +97,18 @@
 <body>
 
     <div class="box">
-        <h2>🚀 BANTU ADMIN UPDATE JUDUL KONTEN LCS HARI INI</h2>
+        <h2>🚀 BANTU ADMIN BPP BOLA UPDATE JUDUL KONTEN LCS HARI INI</h2>
         <div id="inputs">
             <input type="text" class="judul" placeholder="Tulis Judul Konten 1...">
             <input type="text" class="judul" placeholder="Konten 2 ...">
-            <input type="text" class="judul" placeholder="Konten 3 (biarkan jika tdk ada)">
-            <input type="text" class="judul" placeholder="Konten 4 (biarkan jika tdk ada)">
+            <input type="text" class="judul" placeholder="Konten 3 ...(biarkan jika tdk ada)">
+            <input type="text" class="judul" placeholder="Konten 4 ...(biarkan jika tdk ada)">
         </div>
         
         <button onclick="kirimData()">UPDATE SEKARANG!!</button>
         
         <div id="status"></div>
-        <div class="footer">Pusat Kendali Update Judul Konten</div>
+        <div class="footer">Pusat Kendali Update Judul Konten LCS Hari Ini</div>
     </div>
 
     <script>
@@ -123,7 +123,7 @@
             }
 
             status.style.color = "#333";
-            status.innerText = "⏳ Memproses pembaruan...";
+            status.innerText = "⏳ Memproses pembaruan anda...";
             
             const url = "https://script.google.com/macros/s/AKfycbzBRXwcAkJBPLvnvOdFuWKqag-XBq2U81kYBx3LyOKGCM0Sqx8WileVfvMa1T6BkEQH6A/exec";
 
@@ -143,7 +143,7 @@
                 // inputs.forEach(i => i.value = ""); 
             } catch (e) {
                 status.style.color = "#e74c3c";
-                status.innerText = "❌ Gagal. Pastikan internet aktif.";
+                status.innerText = "❌ Gagal. Pastikan Jaringan internet aktif.";
                 console.error(e);
             }
         }
